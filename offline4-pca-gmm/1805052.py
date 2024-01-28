@@ -266,7 +266,7 @@ def main():
     global FIGURE_PATH
 
     # take file name from argument
-    input_file = "dataset/3D_data_points.txt"
+    input_file = "dataset/100D_data_points.txt"
     if len(sys.argv) > 1:
       input_file = sys.argv[1]  
 
@@ -301,7 +301,7 @@ def main():
       print("best likelihood:", best_log_likelihood, "for k =", best_gmm.n_components)
       best_gmm.plot_cluster(X, mean=False, save=True)
 
-    # best_gmm = GaussianMixtureModel(n_components=4)
+    # best_gmm = GaussianMixtureModel(n_components=3)
     # best_gmm.fit(X, plot=True, contour=True, countour_itr=1)
     # best_log_likelihood = best_gmm.log_likelihood[-1]
 
